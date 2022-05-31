@@ -134,18 +134,19 @@ main {
 	flex-direction: column;
 	padding: 3.5rem 3rem 0rem 3rem;
 	text-align: center;
-	height: 85vh;
+	height: 80vh;
 	gap: 2rem;
-	/* margin-bottom: 0rem; */
+	margin-bottom: 5rem;
 }
 
 #about h2 {
+	margin-top: 1rem;
 	padding-bottom: 2rem;
 }
 
 #about p {
 	color: var(--ex-clr);
-	padding-bottom: 4rem;
+	padding-bottom: 0.5rem;
 }
 
 .box {
@@ -214,7 +215,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding: 0rem 1rem 2.5rem 1rem;
+	padding: 0rem 1rem 4rem 1rem;
 	margin: 2.2rem 0 0 0;
 }
 
@@ -250,24 +251,12 @@ main {
 	border: 1px solid var(--lght-purp);
 	border-radius: 10px;
 	width: 230px;
-	height: 300px;
+	height: 320px;
 	margin: 0.8rem 0.3rem;
 	transition: all 500ms ease-in;
 	position: relative;
 	overflow: hidden;
 }
-
-/* .project-box::after {
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	width: 99%;
-	height: 99%;
-	border: 1px solid rgb(84, 110, 255);
-	border-radius: 10px;
-	z-index: 1;
-} */
 
 .project-box:hover {
 	box-shadow: 0px 0px 15px rgb(76, 118, 255);
@@ -319,17 +308,17 @@ main {
 	transition: all 600ms ease-in;
 }
 
-/* Language Section  */
+/* Ability Section  */
 
 #abilities {
 	background-image: linear-gradient(to bottom, #080311, #271b29);
 	height: 55vh;
 	text-align: center;
-	padding: 0 1rem;
+	padding: 4.8rem 1rem;
 }
 
 #abilities h2 {
-	padding-top: 5rem;
+	padding-top: 3rem;
 }
 
 #abilities p {
@@ -450,7 +439,7 @@ footer a:hover {
 		font-size: 2rem;
 	}
 	p {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 
 	/* Navigation Bar  Tablet */
@@ -590,13 +579,17 @@ footer a:hover {
 
 	#abilities {
 		height: 70;
-		padding: 5rem 3rem;
+		padding: 5rem 1rem;
 	}
 	#abilities p {
 		margin-bottom: 0.5rem;
 	}
 	#abilities ul {
-		padding: 1.5rem 7rem 0 7rem;
+		padding: 1.5rem 5rem 0 5rem;
+	}
+	#abilities ul li {
+		font-size: 1.2rem;
+		padding: 1.2rem;
 	}
 
 	/* Contact Section For Tablet  */
