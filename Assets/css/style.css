@@ -134,14 +134,18 @@ main {
 	flex-direction: column;
 	padding: 3.5rem 3rem 0rem 3rem;
 	text-align: center;
-	height: 80vh;
+	height: 85vh;
 	gap: 2rem;
-	margin-bottom: 5rem;
+	margin-bottom: 3rem;
 }
 
 #about h2 {
 	margin-top: 1rem;
 	padding-bottom: 2rem;
+}
+
+.tab {
+	margin-left: 30px;
 }
 
 #about p {
@@ -215,8 +219,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding: 0rem 1rem 4rem 1rem;
-	margin: 2.2rem 0 0 0;
+	padding: 0 1rem 4rem 1rem;
+	margin: 2rem 0 0 0;
 }
 
 #project h2 {
@@ -312,9 +316,9 @@ main {
 
 #abilities {
 	background-image: linear-gradient(to bottom, #080311, #271b29);
-	height: 55vh;
+	height: 64vh;
 	text-align: center;
-	padding: 4.8rem 1rem;
+	padding: 4.3rem 1rem;
 }
 
 #abilities h2 {
@@ -361,7 +365,7 @@ main {
 	background-size: cover;
 	background-position: 51%;
 	background-repeat: no-repeat;
-	padding: 7.5rem 1rem 1rem 1rem;
+	padding: 7.3rem 1rem 1rem 1rem;
 	text-align: center;
 }
 
@@ -464,6 +468,7 @@ footer a:hover {
 
 	header ul li {
 		margin: 0 1rem;
+		font-size: 1.3rem;
 	}
 
 	/* Hero Section Tablet  */
@@ -571,9 +576,9 @@ footer a:hover {
 		padding: 0;
 		height: 405px;
 	}
-	.project-box h3 {
+	/* .project-box h3 {
 		color: var(--drk-clr);
-	}
+	} */
 
 	/* Abilities Section Tablet  */
 
@@ -598,7 +603,7 @@ footer a:hover {
 		margin-top: 1.5rem;
 	}
 	#contact i {
-		font-size: 3.8rem;
+		font-size: 4rem;
 		margin: 0 2.2rem;
 	}
 
@@ -608,7 +613,142 @@ footer a:hover {
 		font-size: 1.5rem;
 	}
 	.sec2 h3 {
-		font-size: 1.4rem;
+		font-size: 1.3rem;
+	}
+	footer a {
+		font-size: 1rem;
+	}
+}
+
+/* Desktop Version  */
+
+@media only screen and (min-width: 1020px) {
+	h2 {
+		font-size: 2.5rem;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+
+	.hero {
+		background-position: 50% 12%;
+	}
+	.hero-title {
+		margin-top: 0.1rem;
+		font-size: 5.2rem;
+	}
+	.hero-title-sub {
+		font-size: 2.5rem;
+	}
+
+	/* About Me Section Desktop  */
+
+	#about {
+		height: 85vh;
+		padding-bottom: 3rem;
+	}
+	#about h2 {
+		margin: 0;
+	}
+	/* Making my picture bigger  */
+	.box {
+		width: 300px;
+		height: 300px;
+		margin: 0;
+	}
+	.box::after {
+		transform: translate(30px, 30px);
+	}
+	.box::before {
+		transform: translate(-30px, -30px);
+	}
+	.box.box:hover::before {
+		transform: translate(-20px, -20px);
+	}
+	.box:hover::after {
+		transform: translate(20px, 20px);
+	}
+
+	/* Project Section for Desktop  */
+
+	#project {
+		margin-top: 8rem;
+	}
+	.project-showcase {
+		grid-template-columns: repeat(2, 320px);
+		grid-template-rows: minmax(200px, auto);
+		gap: 2rem;
+	}
+	.project-box {
+		width: 320px;
+		height: 425px;
+		grid-column: span 1;
+	}
+	.project-showcase:hover > .project-box {
+		height: 425px;
+	}
+	.project-showcase > .project-cover {
+		grid-column: 1 /-1;
+		width: 100%;
+		height: 320px;
+		text-align: center;
+	}
+	.project-showcase:hover > .project-cover {
+		height: 320px;
+	}
+	.project-cover p {
+		margin-top: 5rem;
+	}
+	.project-cover:hover p {
+		margin-top: 5rem;
+	}
+	.project-box-bottom > p {
+		padding: 0.3rem 0.5rem;
+		font-size: 0.9rem;
+	}
+	.project-box:hover .project-box-bottom > p {
+		padding: 0.3rem 0.5rem;
+		font-size: 0.9rem;
+	}
+
+	/* Abilities Section Desktop  */
+
+	#abilities {
+		height: 80vh;
+		padding: 7.2rem 3rem;
+	}
+	#abilities p {
+		margin-bottom: 3.2rem;
+	}
+	#abilities ul li {
+		font-size: 1.5rem;
+		padding: 1.2rem 1.7rem;
+		margin: 1.2rem;
+	}
+
+	/* Contact Section Desktop  */
+
+	#contact {
+		padding: 3rem;
+		background-position: 55% 45%;
+	}
+
+	#contact i {
+		font-size: 5rem;
+		margin: 0 4rem;
+	}
+
+	/* Footer Section Desktop  */
+
+	footer {
+		height: 32vh;
+		padding: 1rem;
+	}
+	.sec1 a {
+		font-size: 1.7rem;
+	}
+	.sec2 h3 {
+		font-size: 1.5rem;
 	}
 	footer a {
 		font-size: 1.2rem;
