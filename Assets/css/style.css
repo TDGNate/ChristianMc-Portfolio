@@ -245,13 +245,13 @@ main {
 }
 
 .project-box {
-	background: rgb(0, 0, 0);
+	/* background: rgb(0, 0, 0);
 	background: linear-gradient(
 		25deg,
 		rgba(0, 0, 0, 1) 2%,
 		rgb(92, 81, 255) 65%,
 		rgb(105, 0, 241) 100%
-	);
+	); */
 	border: 1px solid var(--lght-purp);
 	border-radius: 10px;
 	width: 230px;
@@ -276,7 +276,7 @@ main {
 }
 
 .project-box:hover img {
-	filter: grayscale(0%) contrast(140%);
+	filter: grayscale(0%) contrast(118%);
 }
 
 .project-box-top {
@@ -297,7 +297,7 @@ main {
 	flex-direction: column;
 	/* justify-content: center; */
 	align-items: center;
-	padding: 0.8rem;
+	padding: 0.7rem;
 }
 
 .project-box h3 {
