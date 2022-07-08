@@ -10,6 +10,11 @@
 	--drk-purp: rgb(29, 12, 70);
 	--ex-clr: #e3c1bf;
 	--ex2-clr: #4a4860;
+	--PreDevs: rgb(0, 115, 255);
+}
+
+.PreDevs {
+	color: var(--PreDevs);
 }
 
 /* Universal  */
