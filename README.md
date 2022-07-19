@@ -1,6 +1,6 @@
 # Christian McIlvenny's Portfolio
 
-First Created On 5/26/2022
+5/26/2022
 
 # Highlights
 

@@ -409,10 +409,13 @@ footer a:hover {
 }
 
 .sec1 a {
-	margin: 0.8rem 0;
 	font-weight: bold;
 	font-size: 1.2rem;
 	color: rgb(56, 165, 255);
+}
+
+.sec1 h3 {
+	margin: 0.8rem 0;
 }
 
 .sec1 a:hover {
@@ -435,7 +438,7 @@ footer a:hover {
 
 @media only screen and (min-width: 750px) {
 	.hero-title {
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 
 	h2 {
@@ -648,8 +651,12 @@ footer a:hover {
 		display: block;
 	}
 
+	header h1 a {
+		color: var(--lght-purp);
+	}
+
 	header nav {
-		max-width: 350px;
+		max-width: 400px;
 	}
 
 	header ul {
@@ -657,7 +664,6 @@ footer a:hover {
 	}
 
 	header ul li {
-		margin-left: 1rem;
 		font-size: 1.3rem;
 	}
 
@@ -670,8 +676,8 @@ footer a:hover {
 	}
 
 	.hero-title {
-		margin-top: 0.1rem;
 		font-size: 4.4rem;
+		margin-top: 0.8rem;
 	}
 
 	.hero-title-sub {
@@ -681,18 +687,24 @@ footer a:hover {
 	/* About Me Section Desktop  */
 
 	#about {
-		height: 85vh;
-		padding-bottom: 3rem;
+		padding: 2rem;
+		margin: 4rem 4rem 4.8rem 4rem;
+		height: 65vh;
 	}
 
 	#about h2 {
-		margin: 0;
+		margin-bottom: 1rem;
+	}
+
+	#about p {
+		font-size: 1.3rem;
 	}
 
 	/* Project Section for Desktop  */
 
 	#project {
-		margin-top: 8rem;
+		margin: 0;
+		padding-top: 3rem;
 	}
 
 	.project-showcase {
@@ -762,6 +774,10 @@ footer a:hover {
 	#contact {
 		padding: 3rem;
 		background-position: 55% 45%;
+	}
+
+	#contact ul {
+		margin-top: 13%;
 	}
 
 	#contact i {
