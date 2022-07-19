@@ -13,6 +13,22 @@
 	--PreDevs: rgb(0, 115, 255);
 }
 
+/* scroll bar  */
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+}
+
+::-webkit-scrollbar-track {
+	background: rgb(186, 174, 255);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3b25ff;
+	border-radius: 5px;
+}
+
 .PreDevs {
 	color: var(--PreDevs);
 }
@@ -653,6 +669,7 @@ footer a:hover {
 
 	header h1 a {
 		color: var(--lght-purp);
+		margin-left: 1.2rem;
 	}
 
 	header nav {
