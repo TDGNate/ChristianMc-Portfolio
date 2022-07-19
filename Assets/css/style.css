@@ -59,11 +59,7 @@ header h1 {
 }
 
 header nav {
-	/* flex-wrap: nowrap; */
 	width: 90%;
-	/* text-align: center; */
-	/* align-self: center; */
-	/* min-width: 100%; */
 }
 
 ul {
@@ -95,7 +91,6 @@ a {
 
 main {
 	width: 100%;
-	/* height: 100%; */
 }
 
 /* Hero Section  */
@@ -211,9 +206,11 @@ main {
 	box-shadow: inset 0px 0px 10px rgb(255, 117, 237),
 		0px 0px 14px rgb(121, 106, 255);
 }
+
 .box.box:hover::before {
 	transform: translate(-16px, -16px);
 }
+
 .box:hover::after {
 	transform: translate(16px, 16px);
 }
@@ -339,7 +336,6 @@ main {
 
 #abilities ul li {
 	font-size: 1rem;
-	/* background-color: var(--drk-purp); */
 	border: 1px solid var(--lght-purp);
 	border-radius: 10px;
 	padding: 1rem;
@@ -350,8 +346,6 @@ main {
 }
 
 #abilities ul li:hover {
-	/* font-size: 1.3rem; */
-	/* padding: 1.1rem; */
 	color: var(--lght-clr);
 	box-shadow: inset 0px 0px 8px var(--lght-purp), 0px 0px 15px var(--lght-purp);
 }
@@ -402,8 +396,6 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	/* text-align: start; */
-	/* align-items: flex-start; */
 	background-image: linear-gradient(to bottom, #121d31, #090e18);
 	padding: 2.6rem 1rem 5rem 1rem;
 }
@@ -442,6 +434,7 @@ footer a:hover {
 	h2 {
 		font-size: 1.8rem;
 	}
+
 	p {
 		font-size: 1.2rem;
 	}
@@ -458,6 +451,7 @@ footer a:hover {
 		display: block;
 		margin-left: 2.3rem;
 	}
+
 	header nav {
 		max-width: 350px;
 	}
@@ -476,9 +470,11 @@ footer a:hover {
 	.hero {
 		margin-top: -80px;
 	}
+
 	.hero-title {
 		font-size: 4rem;
 	}
+
 	.hero-title-sub {
 		font-size: 2rem;
 	}
@@ -495,15 +491,18 @@ footer a:hover {
 		gap: 0;
 		margin-bottom: 5rem;
 	}
+
 	#about h2 {
 		width: 100%;
 		/* margin-top: ; */
 		padding: 0;
 	}
+
 	#about p {
 		width: 38%;
 		padding: 1rem;
 	}
+
 	.box {
 		width: 250px;
 		height: 250px;
@@ -516,13 +515,16 @@ footer a:hover {
 		margin: 0;
 		gap: 4rem;
 	}
+
 	#project h2 {
 		width: 100%;
 		margin: 0;
 	}
+
 	.project-showcase > .project-box > h2 {
 		color: var(--drk-purp);
 	}
+
 	.project-showcase {
 		display: grid;
 		grid-template-columns: repeat(2, 250px);
@@ -531,6 +533,7 @@ footer a:hover {
 		align-items: center;
 		grid-gap: 1rem;
 	}
+
 	.project-box {
 		margin: 0;
 		padding: 0;
@@ -538,36 +541,43 @@ footer a:hover {
 		width: 250px;
 		height: 405px;
 	}
+
 	.project-showcase > .project-cover {
 		display: flex;
 		grid-column: span 2;
 		width: 100%;
 		height: calc(405px - 160px);
 	}
+
 	.project-showcase > .project-cover:hover {
 		height: calc(405px - 160px);
 		justify-content: center;
 	}
+
 	.project-cover .project-box-top {
 		width: 100%;
 		height: 100%;
 	}
+
 	.project-cover .project-box-bottom {
 		padding: 1rem 0;
 		width: 100%;
 	}
+
 	.project-cover img {
 		align-self: center;
 		height: 100%;
 		width: 100%;
 		/* filter: grayscale(0%) contrast(140%); */
 	}
+
 	.project-box p {
 		visibility: visible;
 		opacity: 1;
 		margin: 0;
 		/* padding: 1rem; */
 	}
+
 	.project-box:hover,
 	.project-box:hover p {
 		visibility: visible;
@@ -583,12 +593,15 @@ footer a:hover {
 		height: 70;
 		padding: 5rem 1rem;
 	}
+
 	#abilities p {
 		margin-bottom: 0.5rem;
 	}
+
 	#abilities ul {
 		padding: 1.5rem 5rem 0 5rem;
 	}
+
 	#abilities ul li {
 		font-size: 1.2rem;
 		padding: 1.2rem;
@@ -599,6 +612,7 @@ footer a:hover {
 	#contact h2 {
 		margin-top: 1.5rem;
 	}
+
 	#contact i {
 		font-size: 4rem;
 		margin: 0 2.2rem;
@@ -609,9 +623,11 @@ footer a:hover {
 	.sec1 a {
 		font-size: 1.5rem;
 	}
+
 	.sec2 h3 {
 		font-size: 1.3rem;
 	}
+
 	footer a {
 		font-size: 1rem;
 	}
@@ -650,30 +666,6 @@ footer a:hover {
 
 	#about h2 {
 		margin: 0;
-	}
-
-	/* Making my picture bigger  *
-	/
-	.box {
-		width: 300px;
-		height: 300px;
-		margin: 0;
-	}
-
-	.box::after {
-		transform: translate(30px, 30px);
-	}
-
-	.box::before {
-		transform: translate(-30px, -30px);
-	}
-
-	.box.box:hover::before {
-		transform: translate(-20px, -20px);
-	}
-
-	.box:hover::after {
-		transform: translate(20px, 20px);
 	}
 
 	/* Project Section for Desktop  */
