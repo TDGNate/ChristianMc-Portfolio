@@ -47,10 +47,13 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding: 1rem 0.7rem;
+	align-items: center;
+	padding: 0.8rem;
 	color: var(--lght-clr);
-	z-index: 2;
-	width: 100wv;
+	z-index: 5 !important;
+	width: 100%;
+	background-color: var(--drk-clr);
+	position: fixed;
 }
 
 header h1 {
@@ -60,6 +63,8 @@ header h1 {
 
 header nav {
 	width: 90%;
+	justify-content: center;
+	align-items: center;
 }
 
 ul {
@@ -69,8 +74,8 @@ ul {
 header ul {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: center;
+	flex-wrap: nowrap;
 }
 
 header ul li {
@@ -98,9 +103,8 @@ main {
 .hero {
 	background-image: url(../images/mountain.jpg);
 	background-size: cover;
-	background-position: 18%;
+	background-position: 50%;
 	background-repeat: no-repeat;
-	margin-top: -75px;
 	height: 75vh;
 	width: 100%;
 	z-index: -1;
@@ -114,7 +118,7 @@ main {
 
 .hero-title {
 	margin-top: 1rem;
-	font-size: 2.7rem;
+	font-size: 2.3rem;
 	margin-top: -8rem;
 	color: var(--drk-purp);
 	transition: all 1s ease;
@@ -278,7 +282,6 @@ main {
 
 .project-box-top {
 	width: 100%;
-	/* height: 100%; */
 }
 
 .project-box img {
@@ -292,7 +295,6 @@ main {
 .project-box-bottom {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	padding: 0.7rem;
 }
@@ -430,7 +432,11 @@ footer a:hover {
 
 /* Tablet Devices */
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 750px) {
+	.hero-title {
+		font-size: 3rem;
+	}
+
 	h2 {
 		font-size: 1.8rem;
 	}
@@ -443,17 +449,9 @@ footer a:hover {
 
 	header {
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		text-align: center;
-	}
-
-	header h1 {
-		display: block;
-		margin-left: 2.3rem;
-	}
-
-	header nav {
-		max-width: 350px;
+		padding: 0.7rem 0.8rem;
 	}
 
 	header ul {
@@ -468,11 +466,7 @@ footer a:hover {
 	/* Hero Section Tablet  */
 
 	.hero {
-		margin-top: -80px;
-	}
-
-	.hero-title {
-		font-size: 4rem;
+		background-position: 50%;
 	}
 
 	.hero-title-sub {
@@ -494,7 +488,6 @@ footer a:hover {
 
 	#about h2 {
 		width: 100%;
-		/* margin-top: ; */
 		padding: 0;
 	}
 
@@ -568,14 +561,12 @@ footer a:hover {
 		align-self: center;
 		height: 100%;
 		width: 100%;
-		/* filter: grayscale(0%) contrast(140%); */
 	}
 
 	.project-box p {
 		visibility: visible;
 		opacity: 1;
 		margin: 0;
-		/* padding: 1rem; */
 	}
 
 	.project-box:hover,
@@ -636,6 +627,30 @@ footer a:hover {
 /* Desktop Version  */
 
 @media only screen and (min-width: 1020px) {
+	header {
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		padding: 0.3rem 1rem;
+	}
+
+	header h1 {
+		display: block;
+	}
+
+	header nav {
+		max-width: 350px;
+	}
+
+	header ul {
+		width: 100%;
+	}
+
+	header ul li {
+		margin-left: 1rem;
+		font-size: 1.3rem;
+	}
+
 	h2 {
 		font-size: 2.5rem;
 	}
@@ -644,13 +659,9 @@ footer a:hover {
 		font-size: 1.5rem;
 	}
 
-	.hero {
-		background-position: 50% 12%;
-	}
-
 	.hero-title {
 		margin-top: 0.1rem;
-		font-size: 5.2rem;
+		font-size: 4.4rem;
 	}
 
 	.hero-title-sub {
@@ -769,8 +780,6 @@ footer a:hover {
 }
 
 /* keyframe Animations  */
-
-/* I did not use bounce  */
 
 @keyframes bounce {
 	0% {
