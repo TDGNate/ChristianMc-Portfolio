@@ -138,16 +138,14 @@ main {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 3.5rem 3rem 0rem 3rem;
 	text-align: center;
-	height: 85vh;
-	gap: 2rem;
-	margin-bottom: 3rem;
+	/* height: 100vh; */
+	padding: 2rem 2rem 3rem 2rem;
+	gap: 2.5rem;
 }
 
 #about h2 {
-	margin-top: 1rem;
-	padding-bottom: 2rem;
+	margin: 1rem 0;
 }
 
 .tab {
@@ -157,6 +155,7 @@ main {
 #about p {
 	color: var(--ex-clr);
 	padding-bottom: 0.5rem;
+	text-align: center;
 }
 
 .box {
@@ -226,13 +225,13 @@ main {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
 	text-align: center;
-	padding: 0 1rem 4rem 1rem;
-	margin: 2rem 0 0 0;
+	padding: 2rem 0;
 }
 
 #project h2 {
-	margin: 0.5rem 0 2rem 0;
+	margin: 1rem 0;
 }
 
 .project-box h4 {
@@ -241,7 +240,7 @@ main {
 
 #project p {
 	color: var(--ex-clr);
-	margin-bottom: 2rem;
+	margin: 0 1rem 2rem 1rem;
 }
 
 .project-showcase {
@@ -314,19 +313,21 @@ main {
 /* Ability Section  */
 
 #abilities {
-	background-image: linear-gradient(to bottom, #080311, #271b29);
-	height: 64vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
-	padding: 4.3rem 1rem;
+	background-image: linear-gradient(to bottom, #080311, #271b29);
+	padding: 2rem;
+	gap: 2rem;
 }
 
 #abilities h2 {
-	padding-top: 3rem;
+	margin: 1rem 0;
 }
 
 #abilities p {
 	color: var(--ex-clr);
-	margin: 2rem 0;
 }
 
 #abilities ul {
@@ -361,12 +362,12 @@ main {
 	background-size: cover;
 	background-position: 51%;
 	background-repeat: no-repeat;
-	padding: 7.3rem 1rem 1rem 1rem;
+	padding: 2rem;
 	text-align: center;
 }
 
 #contact h2 {
-	margin-bottom: 2rem;
+	margin: 3rem 0 2rem 0;
 }
 
 .touch {
@@ -376,7 +377,7 @@ main {
 #contact ul {
 	display: flex;
 	justify-content: center;
-	margin-top: 13rem;
+	margin-top: 50%;
 	padding: 2rem;
 }
 
