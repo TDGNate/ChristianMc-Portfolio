@@ -2,13 +2,17 @@
 
 5/26/2022
 
-# Highlights
+## Highlights
 
 The purpose of this project is to show employers my experience and accomplishments through an appealing portfolio. My portfolio presents my name, age, and how I began this journey as a Software Engineer.
 
 I built this website with HTML and CSS using Flexbox, grid, and a few Media Queries for different device sizes (Mobile > Tablet > Desktop). I've also added a contact section using Font Awesome for the icons, and below I added a footer with all the links that helped me achieve my website's look!
 
-# Pictures
+## Live Page
+
+- https://tdgnate.github.io/ChristianMc-Portfolio/
+
+## Pictures
 
 - The images displayed under is not the entire website
 
